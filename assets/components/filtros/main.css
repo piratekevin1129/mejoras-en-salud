@@ -1,0 +1,64 @@
+.ms-formgroup{
+    position: relative;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+}
+
+.ms-formgroup label{
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Barlow-Regular";
+    font-size: 16px;
+    color: #0033A0;
+    font-weight: normal;
+    line-height: normal;
+    margin-bottom: 2px;
+}
+.ms-formgroup select{
+    width: 100%;
+    height: 44px;
+    border-radius: 4px;
+    font-family: "Barlow-Regular";
+    font-size: 18px;
+    color: #53565A;
+    font-weight: normal;
+    line-height: normal;
+    padding: 0px 9px;
+}
+
+
+.ms-main-button{
+    border: none !important;
+    outline: none !important;
+    outline-width: 0 !important;
+    display: flex;
+    width: 155px;
+    max-width: 100%;
+    height: 44px;
+    border-radius: 30px;
+    
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    background-color: #0033A0;
+    cursor: pointer;
+    text-decoration: none !important;
+}
+
+.ms-main-button i{
+    font-size: 18px;
+    margin-right: 8px;
+    color: #FFFFFF;
+}
+.ms-main-button span{
+    font-family: "Barlow-SemiBold";
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+    line-height: normal;
+    color: #FFFFFF;
+}

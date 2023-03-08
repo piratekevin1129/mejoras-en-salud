@@ -1,0 +1,73 @@
+.ms-tags-container{
+    position: relative;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+}
+.ms-tag-row{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-evenly;
+}
+
+.ms-tag-col{
+    position: relative;
+    width: 30%;
+    height: auto;
+    min-height: 95px;
+    border-radius: 8px;
+    border: 1px solid rgba(29, 66, 138, 1);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 15px;
+    margin: 10px 0px;
+    background-color: rgba(29, 66, 138, 0);
+    box-shadow: 2px 2px 8px 0px rgba(29, 66, 138, 0.16);
+    text-decoration: none;
+
+    transition: background-color 0.2s, box-shadow 0.2s, -moz-box-shadow 0.2s, -webkit-box-shadow 0.2s, -o-box-shadow 0.2s;
+    -webkit-transition: background-color 0.2s, box-shadow 0.2s, -moz-box-shadow 0.2s, -webkit-box-shadow 0.2s, -o-box-shadow 0.2s;
+}
+.ms-tag-col:hover{
+    cursor: pointer;
+    background-color: rgba(29, 66, 138, 0.1);
+    box-shadow: 2px 2px 8px 0px rgba(29, 66, 138, 0.3);
+}
+
+.ms-tag-col div{
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+.ms-tag-col div p{
+    margin: 0px;
+    padding: 0px;
+
+    font-family: 'Barlow-SemiBold';
+    font-size: 16px;
+    color: #0033A0;
+    font-weight: normal;
+    line-height: normal;
+    text-align: center;
+}
+
+@media (max-width: 990px){
+    .ms-tag-col{
+        width: 45%;
+    }
+}
+@media (max-width: 520px){
+    .ms-tag-col{
+        width: 90%;
+    }
+}

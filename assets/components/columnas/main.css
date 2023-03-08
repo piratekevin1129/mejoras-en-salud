@@ -1,0 +1,65 @@
+.ms-col{
+    position: relative;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.ms-row-3{
+    position: relative;
+    width: 33.333%;
+    height: auto;
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    display: block;
+}
+
+.ms-col .ms-row-3{
+    padding-left: 6px;
+    padding-right: 6px;
+}
+.ms-col .ms-row-3:first-child{
+    padding-right: 18px;
+}
+.ms-col .ms-row-3:last-child{
+    padding-left: 18px;
+}
+
+.ms-row-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.ms-row-justify-end{
+    justify-content: flex-end;
+}
+.ms-row-align-end{
+    align-items: flex-end;
+}
+
+
+@media (max-width: 768px){
+    .ms-col .ms-row-3:first-child{
+        width: 50%;
+        padding-left: 0px;
+        padding-right: 10px;
+    }
+    .ms-col .ms-row-3:nth-child(2){
+        width: 50%;
+        padding-right: 0px;
+        padding-left: 10px;
+    }
+    .ms-col .ms-row-3:last-child{
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-top: 15px;
+    }
+}

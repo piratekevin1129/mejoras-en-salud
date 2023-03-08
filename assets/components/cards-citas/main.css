@@ -1,0 +1,279 @@
+.ms-cards-container{
+    position: relative;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+}
+.ms-card-row{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: flex-start;
+    padding: 25px 0px;
+    border-radius: 8px;
+    background-color: #FCFCFC;
+    box-shadow: 2px 2px 8px 0px rgba(29, 66, 138, 0.16);
+}
+
+.ms-card-col1,
+.ms-card-col-1,
+.ms-card-col2,
+.ms-card-col-2,
+.ms-card-col3
+{
+    position: relative;
+    height: auto;
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ms-card-col1{
+    width: 25%;
+}
+.ms-card-col-1{
+    width: 50%;
+}
+.ms-card-col2{
+    width: 25%;
+    width: calc(100% - (25% + 280px));
+    width: -moz-calc(100% - (25% + 280px));
+}
+.ms-card-col-2{
+    width: 50%;
+}
+.ms-card-col3{
+    width: 280px;
+}
+
+.ms-card-col1 > div,
+.ms-card-col-1 > div,
+.ms-card-col2 > div,
+.ms-card-col-2 > div,
+.ms-card-col3 > div
+{
+    width: auto;
+    display: block;
+}
+.ms-card-col1::after,
+.ms-card-col-1::after,
+.ms-card-col2::after
+{
+    content: "";
+    position: absolute;
+    width: 1px;
+    background-color: rgba(186, 188, 191, 1);
+    height: 100%;
+    top: 0px;
+    right: 0px;
+}
+.ms-card-col1 p,
+.ms-card-col-1 p{
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    font-family: "FSJoey-Bold";
+    font-size: 20px;
+    color: #0033A0;
+    font-weight: normal;
+    line-height: 30px;
+    text-align: left;
+}
+.ms-card-col1 p span,
+.ms-card-col-1 p span{
+    color: rgba(83, 86, 90, 1);
+}
+
+.ms-card-col2 h4,
+.ms-card-col-2 h4{
+    display: block;
+    margin: 0px;
+    margin-bottom: 2px;
+    padding: 0px;
+    font-family: "FSJoey-Bold";
+    font-size: 20px;
+    color: rgba(83, 86, 90, 1);
+    font-weight: normal;
+    line-height: normal;
+    text-align: left;
+}
+
+.ms-card-col2 h5,
+.ms-card-col-2 h5{
+    display: block;
+    margin: 0px;
+    margin-bottom: 2px;
+    padding: 0px;
+    font-family: "Barlow-Medium";
+    font-size: 18px;
+    color: rgba(83, 86, 90, 1);
+    font-weight: normal;
+    line-height: normal;
+    text-align: left;
+}
+
+.ms-card-col2 h6,
+.ms-card-col-2 h6{
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Barlow-Medium";
+    font-size: 16px;
+    color: rgba(29, 66, 138, 1);
+    font-weight: normal;
+    line-height: normal;
+    text-align: left;
+}
+.ms-card-col2 h6 a,
+.ms-card-col-2 h6 a{
+    color: inherit !important;
+    text-decoration: underline !important;
+    font-family: inherit !important;
+}
+
+.ms-card-buttons{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.ms-card-button1,
+.ms-card-button2{
+    border: none !important;
+    outline: none !important;
+    outline-width: 0 !important;
+    display: flex;
+    width: 120px;
+    height: 44px;
+    border-radius: 30px;
+    
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+
+    font-family: "Barlow-SemiBold";
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+    line-height: normal;
+    text-decoration: none;
+
+    transition: background-color 0.2s;
+    -webkit-transition: background-color 0.2s;
+}
+.ms-card-button1{
+    color: #0033A0;
+    background-color: rgba(0, 51, 60, 0);
+}
+.ms-card-button1:hover{
+    background-color: rgba(0, 51, 60, 0.2);
+    cursor: pointer;
+}
+.ms-card-button2{
+    color: #df2b32;
+    background-color: rgba(223, 43, 50, 0);
+}
+.ms-card-button2:hover{
+    cursor: pointer;
+    background-color: rgba(223, 43, 50, 0.2);
+}
+
+.ms-card-button3{
+    border: none !important;
+    outline: none !important;
+    outline-width: 0 !important;
+    display: flex;
+    width: 215px;
+    max-width: 100%;
+    height: 44px;
+    border-radius: 30px;
+    
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(227, 232, 41, 1);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.ms-card-button3 i{
+    font-size: 18px;
+    margin-right: 8px;
+    color: #0033A0;
+}
+.ms-card-button3 span{
+    font-family: "Barlow-SemiBold";
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+    line-height: normal;
+    color: #0033A0;
+}
+
+@media (max-width: 1100px){
+    .ms-card-col1,
+    .ms-card-col2,
+    .ms-card-col3
+    {
+        padding: 0px 10px;
+    }
+
+    .ms-card-col2{
+        width: 25%;
+        width: calc(100% - (25% + 180px));
+        width: -moz-calc(100% - (25% + 180px));
+    }
+    .ms-card-col3{
+        width: 180px;
+    }
+
+    .ms-card-button3{
+        width: 160px;
+    }
+    .ms-card-button3 i{
+        display: none;
+    }
+}
+
+@media (max-width: 900px){
+    .ms-card-col1{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .ms-card-col2{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .ms-card-col3{
+        width: 100%;
+    }
+
+
+    .ms-card-col1 p{
+        text-align: center;
+    }
+    .ms-card-button3{
+        width: 215px;
+    }
+    .ms-card-button3 i{
+        display: initial;
+    }
+
+    .ms-card-col1::after,
+    .ms-card-col2::after{
+        display: none;
+    }
+
+}

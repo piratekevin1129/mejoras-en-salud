@@ -1,0 +1,154 @@
+.citas-container{
+    position: relative;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+}
+.citas-container-header{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+.citas-container-header-prevbtn button,
+.citas-container-header-nextbtn button{
+    outline: none;
+    outline-width: 0;
+    border: none;
+    position: relative;
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(235, 235, 235, 1);
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.citas-container-header-prevbtn button i,
+.citas-container-header-nextbtn button i{
+    font-size: 25px;
+    color: #0033A0;
+}
+     
+.citas-container-header-dias{
+    position: relative;
+    display: block;
+    width: 100%;
+    width: calc(100% - 100px);
+    width: -moz-calc(100% - 100px);
+    height: 60px;
+    overflow: hidden;
+}
+.citas-container-header-dias::after,
+.citas-container-header-dias::before{
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 100%;
+    top: 0px;
+}
+.citas-container-header-dias::after{
+    background: linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,0));
+    background: -moz-linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,0));
+    background: -webkit-linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,0));
+    background: -o-linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,0));
+    right: 0px;
+}
+.citas-container-header-dias::before{
+    background: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0));
+    background: -moz-linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0));
+    background: -webkit-linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0));
+    background: -o-linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0));
+    left: 0px;
+}
+
+.citas-container-header-dias-wrap{
+    position: absolute;
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+}
+.citas-container-header-dia{
+    position: relative;
+    width: 170px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.citas-container-header-dia::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(235, 235, 235, 1);
+    bottom: 0px;
+    left: 0px;
+}
+.header-dia-active::after{
+    background-color: rgba(0, 51, 160, 1);
+}
+.citas-container-header-dia p{
+    display: block;
+    width: auto;
+    margin: 0px 0px;
+    padding: 0px;
+    font-family: 'FSJoey-Medium';
+    font-size: 18px;
+    color: rgba(83, 86, 90, 1);
+    text-align: center;
+    font-weight: normal;
+    line-height: normal;
+}
+.header-dia-active p{
+    color: #0033A0;
+}
+.header-dia-nodisponible p{
+    color: rgba(186, 188, 191, 1);
+}
+                        
+.citas-container-body{
+    position: relative;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    margin-top: 20px;
+}
+
+.no-citas-container{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+}
+.no-citas-container img{
+    display: block;
+    margin: 10px auto;
+    width: 260px;
+    height: auto;
+}
+.no-citas-container h3{
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 15px;
+
+    font-family: 'FSJoey-Bold';
+    font-size: 22px;
+    color: #53565A;
+    font-weight: normal;
+    line-height: normal;
+    text-align: center;
+}
