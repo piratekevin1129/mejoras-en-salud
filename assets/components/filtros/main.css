@@ -62,3 +62,28 @@
     line-height: normal;
     color: #FFFFFF;
 }
+
+@media (max-width: 900px){
+    .ms-main-button{
+        height: 40px;
+        border-radius: 20px;
+    }
+}
+@media (max-width: 768px){
+    .ms-main-button{
+        height: 38px;
+        border-radius: 20px;
+    }
+    .ms-main-button span{
+        font-size: 16px;
+    }
+}
+@media (max-width: 520px){
+    .ms-main-button{
+        height: 34px;
+        border-radius: 20px;
+    }
+    .ms-main-button span{
+        font-size: 16px;
+    }
+}
